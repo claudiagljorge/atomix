@@ -340,13 +340,13 @@ function getRank(score) {
   return { ...rank, next, progress: Math.min(1, progress) };
 }
 
-function getStars(levelResult) {
-  if (!levelResult || !levelResult.won) return 0;
-  const { total } = levelResult;
-  if (total >= 350) return 3;
-  if (total >= 200) return 2;
-  return 1;
-}
+// // function getStars(levelResult) {
+//   if (!levelResult || !levelResult.won) return 0;
+//   const { total } = levelResult;
+//   if (total >= 350) return 3;
+//   if (total >= 200) return 2;
+//   return 1;
+// }
 
 function StarDisplay({ count, size = 18 }) {
   return (
